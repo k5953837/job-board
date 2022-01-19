@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if ! command -v foreman &> /dev/null
+then
+  echo "Installing overmind..."
+  brew install overmind
+fi
+
+overmind start -f Procfile.dev
