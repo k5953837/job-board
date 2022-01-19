@@ -1,0 +1,2 @@
+web: bin/rails server -p 5000
+ngrok: ngrok http 5000
