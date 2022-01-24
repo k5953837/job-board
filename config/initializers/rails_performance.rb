@@ -6,7 +6,7 @@ RailsPerformance.setup do |config|
   config.enabled = true
 
   # default path where to mount gem
-  config.mount_at = nil
+  # config.mount_at = nil
 
   # protect your Performance Dashboard with HTTP BASIC password
   # config.http_basic_authentication_enabled = false
