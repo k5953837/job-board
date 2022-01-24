@@ -94,6 +94,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.7.1)
     minitest (5.15.0)
     msgpack (1.4.2)
     net-imap (0.2.3)
@@ -112,6 +113,9 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.0)
+      mini_portile2 (~> 2.7.0)
+      racc (~> 1.4)
     nokogiri (1.13.0-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.0-x86_64-linux)
@@ -144,6 +148,10 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    rails_performance (1.0.1)
+      rails
+      redis
+      redis-namespace
     railties (7.0.1)
       actionpack (= 7.0.1)
       activesupport (= 7.0.1)
@@ -152,6 +160,9 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis (4.5.1)
+    redis-namespace (1.8.1)
+      redis (>= 3.0.4)
     reline (0.3.1)
       io-console (~> 0.5)
     strscan (3.0.1)
@@ -165,6 +176,7 @@ GEM
     zeitwerk (2.5.3)
 
 PLATFORMS
+  ruby
   x86_64-darwin-19
   x86_64-linux
 
@@ -175,11 +187,12 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
-  rails (~> 7.0.0)
+  rails (~> 7.0.1)
+  rails_performance
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.7.4p191
+   ruby 3.1.0p0
 
 BUNDLED WITH
-   2.2.11
+   2.3.5
